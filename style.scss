@@ -1,20 +1,55 @@
+//color variables
 $macaroni: rgb(255, 170.7, 17.2);
-$blue: rgba(0, 148.1, 225.9, .7);
-$blue-hover: rgb(0, 148.1, 225.9);
+$blue: rgb(66.1, 142.9, 221.6);
+$blue-hover: rgb(66.1, 102, 221.6);
 $beets: rgb(134, 6, 81);
+$font: 'Muli', sans-serif;
+
+// all buttons
+.pageBtn{
+    font-weight: bold;
+    font-size: .8rem;
+    text-align: center;
+    background-color: $blue;
+    color: white;
+    padding: 11px 18px 11px 18px;
+}
+
+.pageBtn:hover{
+    background-color: $blue-hover;
+    color: white;
+    text-decoration: none;
+}
+
 
 body{
     overflow-x: hidden;
 }
 
 .container{
-    font-family: 'Muli', sans-serif;
+    font-family: $font;
 }
 
+
 .navbar{
-    background-color: peachpuff;
     height: 9vh;
+    color: $blue;
+    font-family: $font;
 }
+
+#logo{
+    // margin-left: 3vw;
+}
+
+.navbar-text{
+    margin-right: 1vw;
+
+}
+
+.navBtn{
+}
+
+
 
 .topBox{
     height: 50vh;

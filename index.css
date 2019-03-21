@@ -1,3 +1,18 @@
+.pageBtn {
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-align: center;
+  background-color: #428fde;
+  color: white;
+  padding: 11px 18px 11px 18px;
+}
+
+.pageBtn:hover {
+  background-color: #4266de;
+  color: white;
+  text-decoration: none;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -7,8 +22,13 @@ body {
 }
 
 .navbar {
-  background-color: peachpuff;
   height: 9vh;
+  color: #428fde;
+  font-family: "Muli", sans-serif;
+}
+
+.navbar-text {
+  margin-right: 1vw;
 }
 
 .topBox {
@@ -87,12 +107,12 @@ footer {
 }
 
 .accountBtn {
-  background-color: rgba(0, 148, 226, 0.7);
+  background-color: #428fde;
   color: white;
 }
 
 .accountBtn:hover {
-  background-color: #0094e2;
+  background-color: #4266de;
   color: white;
 }
 
