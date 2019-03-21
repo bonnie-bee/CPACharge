@@ -3,19 +3,20 @@ $macaroni: rgb(255, 170.7, 17.2);
 $blue: rgb(66.1, 142.9, 221.6);
 $blue-hover: rgb(66.1, 102, 221.6);
 $beets: rgb(134, 6, 81);
+$white: rgb(255, 255, 255);
 $font: 'Muli', sans-serif;
 
-// all buttons
-.pageBtn{
+@mixin buttons($fontSize, $topBottom, $leftRight){
     font-weight: bold;
-    font-size: .8rem;
+    font-size: $fontSize;
     text-align: center;
     background-color: $blue;
     color: white;
-    padding: 11px 18px 11px 18px;
+    padding: $topBottom $leftRight;
 }
 
-.pageBtn:hover{
+@mixin buttonsHover($fontSize, $topBottom, $leftRight){
+    @include buttons($fontSize, $topBottom, $leftRight);
     background-color: $blue-hover;
     color: white;
     text-decoration: none;
@@ -32,6 +33,7 @@ body{
 
 
 .navbar{
+    background-color: $white;
     height: 9vh;
     color: $blue;
     font-family: $font;
@@ -43,21 +45,40 @@ body{
 
 .navbar-text{
     margin-right: 1vw;
-
 }
 
-.navBtn{
+#navBtn{
+    @include buttons(.8rem, 11px, 18px);
 }
 
+#navBtn:hover{
+    @include buttonsHover(.8rem, 11px, 18px)
+}
 
 
 .topBox{
     height: 50vh;
-    background-color: violet;
-    margin-top: 12vh;
-    border: dashed black thin;
+    margin-top: 7vh;
+}
+
+#aspcaLogo{
+    margin-top: 2vh;
+}
+
+#firstHeader{
+    color: $blue;
+}
+
+.demoBtn{
+    @include buttons(.8rem, 11px, 46px);
+}
+
+.demoBtn:hover{
+    @include buttonsHover(.8rem, 11px, 46px)
 
 }
+
+
 
 .line{
     height: 1vh;

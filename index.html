@@ -16,21 +16,33 @@
 </head>
 
 <body>
-    <div class="container">
 
-        <!-- navbar - fixed -->
-        <div class="navbar">
+    <!-- navbar - sticky -->
+    <div class="navbar sticky-top">
+        <div class="container">
             <a class="nav-brand active" href="https://cpacharge.com/">
                 <image src="images/logo.PNG" alt="CPACharge Logo" id="logo" /> </a>
             <span class="navbar-text ml-auto">844-352-4705</span>
-            <a class="nav-brand pageBtn" href="https://cpacharge.com/sign-up/?partner=alcpa" id="navBtn">CREATE
+            <a class="nav-brand" href="https://cpacharge.com/sign-up/?partner=alcpa" id="navBtn">CREATE
                 ACCOUNT</a>
         </div>
-        <!-- row with two equal columns -->
+    </div>
+
+
+    <div class="container">
+
+        <!-- top row with city photo and info box-->
         <div class="row justify-content-around">
-            <div class="col-sm-6 topBox"></div>
-            <div class="col-sm-6 topBox"></div>
+            <image src="images/city.PNG" alt="Alabama Capitol Building" class="col-sm-6 topBox" />
+            <div class="col-sm-6 topBox">
+                <image src="images/aspca.PNG" alt="Alabama Society of CPAs logo" id="aspcaLogo" />
+                <h1 id="firstHeader">Alabama Society of CPAs</h1>
+                <p>CPACharge is proud to be selected by the Alabama Society of CPAs as your official member benefit provider for online payments. With CPACharge, you can easily accept credit, debit, and eCheck payments online or in your office. Together ASCPA and CPACharge are working to ensure your firm has the tools for success.</p>
+                <a href="https://cpacharge.com/member-programs/alabama-society-of-cpas/?partner=alcpa#demo-form" class="demoBtn">GET A DEMO</a>
+            </div>
         </div>
+
+
         <!-- line -->
         <div class="row line"></div>
         <!-- row with header for boxes -->
