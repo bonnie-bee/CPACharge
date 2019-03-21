@@ -1,3 +1,99 @@
-body{
-    background-color: blue;
+body {
+  overflow-x: hidden;
 }
+
+.container {
+  font-family: "Muli", sans-serif;
+}
+
+.navbar {
+  background-color: peachpuff;
+  height: 9vh;
+}
+
+.topBox {
+  height: 50vh;
+  background-color: violet;
+  margin-top: 12vh;
+  border: dashed black thin;
+}
+
+.line {
+  height: 1vh;
+  background-color: blue;
+  margin-top: 5vh;
+}
+
+.header {
+  margin-top: 2vh;
+  text-align: center;
+}
+
+.sixBox {
+  height: 30vh;
+  background-color: lime;
+  border: dashed black thin;
+}
+
+.row2 {
+  margin-top: 3vh;
+}
+
+.wideBox {
+  height: 33vh;
+  background-color: paleturquoise;
+  border: dashed black thin;
+  margin-top: 3vh;
+}
+
+.orangeBox {
+  position: absolute;
+  height: 40vh;
+  width: 100vw;
+  background-color: orange;
+  margin-top: 3vh;
+  right: 0%;
+}
+
+.orangeTriangle {
+  position: absolute;
+  border-color: transparent lightpink lightpink transparent;
+  border-style: solid;
+  border-width: 23vh 60vw 23vh 60vw;
+  margin-top: 30vh;
+  right: 0%;
+}
+
+.bottomTwo {
+  height: 43vh;
+  background-color: teal;
+  border: dashed black thin;
+  margin-top: 56vh;
+  margin-bottom: 8vh;
+}
+
+footer {
+  height: 20vh;
+  background-color: maroon;
+  border: dashed black thin;
+}
+
+.logo {
+  background-image: url(images/logo.PNG);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 6.5vh;
+  width: 14.5vw;
+}
+
+.accountBtn {
+  background-color: rgba(0, 148, 226, 0.7);
+  color: white;
+}
+
+.accountBtn:hover {
+  background-color: #0094e2;
+  color: white;
+}
+
+/*# sourceMappingURL=index.css.map */
