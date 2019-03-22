@@ -121,11 +121,19 @@ body {
 }
 
 .wideBox {
+  color: inherit;
+  text-decoration: inherit;
   height: 33vh;
   background-color: white;
   border: solid #cccccc thin;
   border-bottom: solid #428fde 8px;
   margin-top: 3vh;
+}
+
+.wideBox:hover {
+  color: inherit;
+  text-decoration: inherit;
+  box-shadow: 0px 0px 5px #cccccc, 0 0 10px #cccccc;
 }
 
 #stars {
@@ -145,7 +153,7 @@ body {
 }
 
 #quoteMarks {
-  background-image: url(images/quotes.PNG);
+  background-image: url(images/quoteMarks.PNG);
   background-repeat: no-repeat;
   margin-top: 13.5vh;
 }
@@ -165,31 +173,88 @@ body {
   height: 40vh;
   width: 100vw;
   background-color: orange;
-  margin-top: 3vh;
+  margin-top: 6vh;
   right: 0%;
+  text-align: center;
+  color: #555555;
+}
+.orangeBox p {
+  margin-top: 3vh;
+  font-weight: bold;
+}
+
+#orangeHeader {
+  margin-top: 3vh;
+  margin-bottom: 2vh;
+}
+
+.productIcons {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.infoIcons {
+  position: relative;
+  z-index: 10;
 }
 
 .orangeTriangle {
   position: absolute;
-  border-color: transparent lightpink lightpink transparent;
+  border-color: transparent #ffb63d #ffb63d transparent;
   border-style: solid;
-  border-width: 23vh 60vw 23vh 60vw;
+  border-width: 0vh 0vw 60vh 110vw;
   margin-top: 30vh;
-  right: 0%;
+  right: 0vw;
 }
 
 .bottomTwo {
-  height: 43vh;
-  background-color: teal;
-  border: dashed black thin;
-  margin-top: 56vh;
-  margin-bottom: 8vh;
+  margin-top: 50vh;
+  margin-bottom: 13vh;
+}
+.bottomTwo h1 {
+  color: #428fde;
+}
+
+ul {
+  list-style-image: url(images/orangeCheck.PNG);
+}
+ul li {
+  font-size: 1.25rem;
+  margin-bottom: 2vh;
+}
+
+#bottomDemoBtn {
+  margin-left: 3vw;
+}
+
+#desktopPic {
+  height: 100%;
+  width: 100%;
 }
 
 footer {
-  height: 20vh;
-  background-color: maroon;
-  border: dashed black thin;
+  font-family: "Muli", sans-serif;
+  height: 35vh;
+  background-color: #ffab11;
+  text-align: center;
+}
+footer p {
+  color: #555555;
+}
+
+#footerLogo {
+  margin-top: 6vh;
+}
+
+#learnMore {
+  font-size: 0.95rem;
+  margin-top: 3vh;
+  font-weight: bold;
+}
+
+#legalFont {
+  margin-top: 5vh;
+  font-size: 0.7rem;
 }
 
 .logo {
