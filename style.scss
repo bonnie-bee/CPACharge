@@ -92,7 +92,6 @@ body{
     height: .3vh;
     background-color: $blue;
     margin-top: 5vh;
-
 }
 
 
@@ -193,7 +192,7 @@ body{
     position: absolute;
     height: 40vh;
     width: 100vw;
-    background-color: orange;
+    background-color: $macaroni;
     margin-top: 6vh;
     right: 0%;
     text-align: center;
@@ -202,6 +201,17 @@ body{
             margin-top: 3vh;
             font-weight: bold;
         }
+}
+
+.orangeBox:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 20vh;
+    background-color: $macaroni;
+    border-style: solid;
+    border-color: transparent $lightOrange $lightOrange transparent;
+    border-width: 10vh 10vw 10vh 10vw;
 }
 
 #orangeHeader{
@@ -220,18 +230,8 @@ body{
     z-index: 10;
 }
 
-
-.orangeTriangle{
-    position: absolute;
-    border-color: transparent $lightOrange $lightOrange transparent;
-    border-style: solid;
-    border-width: 0vh 0vw 60vh 110vw;
-    margin-top: 30vh;
-    right: 0vw;
-}
-
 .bottomTwo{
-    margin-top: 50vh;
+    margin-top: 54vh;
     margin-bottom: 13vh;
         h1{
             color: $blue;
@@ -279,6 +279,14 @@ footer{
 #legalFont{
     margin-top: 5vh;
     font-size: .7rem;
+}
+
+#privacyPolicy{
+    @include anchorTags();
+}
+
+#privacyPolicy:hover{
+    text-decoration: underline;
 }
 
 
