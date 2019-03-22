@@ -2,8 +2,10 @@
 $macaroni: rgb(255, 170.7, 17.2);
 $blue: rgb(66.1, 142.9, 221.6);
 $blue-hover: rgb(66.1, 102, 221.6);
+$stormy: rgb(81.1, 73.4, 123.7);
 $beets: rgb(134, 6, 81);
 $white: rgb(255, 255, 255);
+$lightGrey: rgb(204, 204, 204);
 $font: 'Muli', sans-serif;
 
 @mixin buttons($fontSize, $topBottom, $leftRight){
@@ -79,25 +81,52 @@ body{
 }
 
 
-
 .line{
-    height: 1vh;
-    // width: 100vw;
-    background-color: blue;
+    height: .3vh;
+    background-color: $blue;
     margin-top: 5vh;
 
 }
 
+
 .header{
+    color: $blue;
     margin-top: 2vh;
     text-align: center;
 }
 
 .sixBox{
     height: 30vh;
-    background-color: lime;
-    border: dashed black thin;
+    background-color: $white;
+    border: solid $lightGrey thin;
+    border-bottom: solid $macaroni 8px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    padding-top: 2%;
+        h5{
+            font-weight: bold;
+            color: $stormy;
+            font-size: 1.3rem;
+        }
+        p{
+            font-size: .9rem;
+        }
 }
+
+#sixthBox{
+    border: none;
+    text-align: center;
+    font-weight: bold;
+        img{
+            border-radius: 50px;
+            background-color: $lightGrey;
+            margin-bottom: 2vh;
+        }
+        p{
+            margin-bottom: 5vh;
+        }
+}
+
 
 .row2{
     margin-top: 3vh;
@@ -105,9 +134,46 @@ body{
 
 .wideBox{
     height: 33vh;
-    background-color: paleturquoise;
-    border: dashed black thin;
+    background-color: $white;
+    border: solid $lightGrey thin;
+    border-bottom: solid $blue 8px;
     margin-top: 3vh;
+}
+
+#stars{
+    margin-top: 2vh;
+
+}
+
+.starIcon{
+    color: $macaroni;
+}
+
+#squiggle{
+    background-image: url(images/squiggle.PNG);
+    height: 25vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 3.5vh;
+}
+
+#quoteMarks{
+    background-image: url(images/quotes.PNG);
+    background-repeat: no-repeat;
+    margin-top: 13.5vh;
+}
+
+#reviewAuthor{
+    color: $blue;
+    font-weight: bold;
+    margin-top: 11vh;
+    margin-left: -5vw;
+
+    h6{
+    }
+    p{
+        font-size: .6em;
+    }
 }
 
 .orangeBox{
