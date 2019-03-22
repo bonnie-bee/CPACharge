@@ -204,6 +204,7 @@ body{
 }
 
 .orangeBox::after{
+    display:inline-block;
     content: "";
     position: absolute;
     right: 0;
