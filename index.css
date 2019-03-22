@@ -183,7 +183,7 @@ body {
   font-weight: bold;
 }
 
-.orangeBox:after {
+.orangeBox::after {
   content: "";
   position: absolute;
   right: 0;
