@@ -273,7 +273,12 @@ body {
     margin-top: 55vh;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
+  .bottomBox {
+    margin-top: 65vh;
+  }
+}
+@media screen and (max-width: 576px) {
   .bottomBox {
     margin-top: 100vh;
   }

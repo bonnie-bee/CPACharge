@@ -188,7 +188,11 @@ body{
     @include breakpoints(900px){
         margin-top: 55vh;
     }
-    @include breakpoints(600px){
+    @include breakpoints(768px){
+            margin-top: 65vh;
+    }
+
+    @include breakpoints(576px){
         margin-top: 100vh;
     }
 }
