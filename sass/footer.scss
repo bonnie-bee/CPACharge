@@ -1,0 +1,34 @@
+@import "variables";
+
+footer{
+    font-family: $font;
+    height: 35vh;
+    background-color: $macaroni;
+    text-align: center;
+    p{
+        color: $darkGrey;
+    }
+}
+
+#footerLogo{
+    margin-top: 6vh;
+}
+
+#learnMore{
+    font-size: .95rem;
+    margin-top: 3vh;
+    font-weight: bold;
+}
+
+#legalFont{
+    margin-top: 5vh;
+    font-size: .7rem;
+}
+
+#privacyPolicy{
+    @include anchorTags();
+}
+
+#privacyPolicy:hover{
+    text-decoration: underline;
+}

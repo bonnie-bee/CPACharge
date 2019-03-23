@@ -1,14 +1,27 @@
-body {
-  overflow-x: hidden;
+.demoBtn {
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-align: center;
+  background-color: #428fde;
+  color: white;
+  padding: 11px 46px;
 }
 
-.container {
-  font-family: "Muli", sans-serif;
+.demoBtn:hover {
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-align: center;
+  background-color: #428fde;
+  color: white;
+  padding: 11px 46px;
+  background-color: #4266de;
+  color: white;
+  text-decoration: none;
 }
 
 .navbar {
   background-color: white;
-  height: 9vh;
+  height: 10vh;
   color: #428fde;
   font-family: "Muli", sans-serif;
 }
@@ -36,203 +49,6 @@ body {
   background-color: #4266de;
   color: white;
   text-decoration: none;
-}
-
-.topBox {
-  height: 50vh;
-  margin-top: 7vh;
-}
-
-#aspcaLogo {
-  margin-top: 2vh;
-}
-
-#firstHeader {
-  color: #428fde;
-}
-
-.demoBtn {
-  font-weight: bold;
-  font-size: 0.8rem;
-  text-align: center;
-  background-color: #428fde;
-  color: white;
-  padding: 11px 46px;
-}
-
-.demoBtn:hover {
-  font-weight: bold;
-  font-size: 0.8rem;
-  text-align: center;
-  background-color: #428fde;
-  color: white;
-  padding: 11px 46px;
-  background-color: #4266de;
-  color: white;
-  text-decoration: none;
-}
-
-.line {
-  height: 0.3vh;
-  background-color: #428fde;
-  margin-top: 5vh;
-}
-
-.header {
-  color: #428fde;
-  margin-top: 2vh;
-  text-align: center;
-}
-
-.sixBox {
-  height: 30vh;
-  background-color: white;
-  border: solid #cccccc thin;
-  border-bottom: solid #ffab11 8px;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-  padding-top: 2%;
-}
-.sixBox h5 {
-  font-weight: bold;
-  color: #51497c;
-  font-size: 1.3rem;
-}
-.sixBox p {
-  font-size: 0.9rem;
-}
-
-#sixthBox {
-  border: none;
-  text-align: center;
-  font-weight: bold;
-}
-#sixthBox img {
-  border-radius: 50px;
-  background-color: #cccccc;
-  margin-bottom: 2vh;
-}
-#sixthBox p {
-  margin-bottom: 5vh;
-}
-
-.row2 {
-  margin-top: 3vh;
-}
-
-.wideBox {
-  color: inherit;
-  text-decoration: inherit;
-  height: 33vh;
-  background-color: white;
-  border: solid #cccccc thin;
-  border-bottom: solid #428fde 8px;
-  margin-top: 3vh;
-}
-
-.wideBox:hover {
-  color: inherit;
-  text-decoration: inherit;
-  box-shadow: 0px 0px 5px #cccccc, 0 0 10px #cccccc;
-}
-
-#stars {
-  margin-top: 2vh;
-}
-
-.starIcon {
-  color: #ffab11;
-}
-
-#squiggle {
-  background-image: url(images/squiggle.PNG);
-  height: 25vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-top: 3.5vh;
-}
-
-#quoteMarks {
-  background-image: url(images/quoteMarks.PNG);
-  background-repeat: no-repeat;
-  margin-top: 13.5vh;
-}
-
-#reviewAuthor {
-  color: #428fde;
-  font-weight: bold;
-  margin-top: 11vh;
-  margin-left: -5vw;
-}
-#reviewAuthor p {
-  font-size: 0.6em;
-}
-
-.orangeBox {
-  position: absolute;
-  height: 40vh;
-  width: 100vw;
-  background-color: #ffab11;
-  margin-top: 6vh;
-  right: 0%;
-  text-align: center;
-  color: #555555;
-}
-.orangeBox p {
-  margin-top: 3vh;
-  font-weight: bold;
-}
-
-.orangeBox::after {
-  display: inline-block;
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 20vh;
-  background-color: #ffab11;
-  border-style: solid;
-  border-color: transparent #ffb63d #ffb63d transparent;
-  border-width: 10vh 10vw 10vh 10vw;
-}
-
-#orangeHeader {
-  margin-top: 3vh;
-  margin-bottom: 2vh;
-}
-
-.productIcons {
-  max-width: 50%;
-  max-height: 50%;
-}
-
-.infoIcons {
-  position: relative;
-  z-index: 10;
-}
-
-.bottomTwo {
-  margin-top: 54vh;
-  margin-bottom: 13vh;
-}
-.bottomTwo h1 {
-  color: #428fde;
-}
-
-ul {
-  list-style-image: url(images/orangeCheck.PNG);
-}
-ul li {
-  font-size: 1.25rem;
-  margin-bottom: 2vh;
-}
-
-#bottomDemoBtn {
-  margin-left: 3vw;
-}
-
-#desktopPic {
-  height: 100%;
-  width: 100%;
 }
 
 footer {
@@ -269,22 +85,182 @@ footer p {
   text-decoration: underline;
 }
 
-.logo {
-  background-image: url(images/logo.PNG);
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 6.5vh;
-  width: 14.5vw;
+body {
+  overflow-x: hidden;
 }
 
-.accountBtn {
+.container {
+  font-family: "Muli", sans-serif;
+}
+
+.topBox {
+  height: auto;
+  margin-top: 7vh;
+}
+
+#aspcaLogo {
+  margin-top: 2vh;
+}
+
+#aspcaHeader {
+  color: #428fde;
+}
+
+.line {
+  height: 0.3vh;
   background-color: #428fde;
-  color: white;
+  margin-top: 5vh;
 }
 
-.accountBtn:hover {
-  background-color: #4266de;
-  color: white;
+.benefitsHeader {
+  color: #428fde;
+  margin-top: 2vh;
+  text-align: center;
+}
+
+.benefitsBox {
+  height: auto;
+  background-color: white;
+  border: solid #cccccc thin;
+  border-bottom: solid #ffab11 8px;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  padding-top: 2%;
+}
+.benefitsBox h5 {
+  font-weight: bold;
+  color: #51497c;
+  font-size: 1.3rem;
+}
+.benefitsBox p {
+  font-size: 0.9rem;
+}
+
+#contactBox {
+  border: none;
+  text-align: center;
+  font-weight: bold;
+}
+#contactBox img {
+  border-radius: 50px;
+  background-color: #cccccc;
+  margin-bottom: 2vh;
+}
+#contactBox p {
+  margin-bottom: 5vh;
+}
+
+.testimonial {
+  color: inherit;
+  text-decoration: inherit;
+  height: 33vh;
+  border: solid #cccccc thin;
+  border-bottom: solid #428fde 8px;
+  margin-top: 3vh;
+}
+
+.testimonial:hover {
+  color: inherit;
+  text-decoration: inherit;
+  box-shadow: 0px 0px 5px #cccccc, 0 0 10px #cccccc;
+}
+
+#stars {
+  margin-top: 2vh;
+}
+
+.starIcon {
+  color: #ffab11;
+}
+
+#squiggle {
+  background-image: url(images/squiggle.PNG);
+  height: 25vh;
+  background-repeat: no-repeat;
+  margin-top: 3.5vh;
+}
+
+#quoteMarks {
+  background-image: url(images/quoteMarks.PNG);
+  background-repeat: no-repeat;
+  height: 5vh;
+  margin-top: 13vh;
+}
+
+#reviewAuthor {
+  color: #428fde;
+  font-weight: bold;
+  margin-top: 11vh;
+  margin-left: -5vw;
+}
+#reviewAuthor p {
+  font-size: 0.6em;
+}
+
+.featureBox {
+  position: absolute;
+  height: 40vh;
+  width: 100vw;
+  background-color: #ffab11;
+  margin-top: 6vh;
+  right: 0%;
+  text-align: center;
+  color: #555555;
+}
+.featureBox p {
+  margin-top: 3vh;
+  font-weight: bold;
+}
+
+.featureBox::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 20vh;
+  background-color: #ffab11;
+  border-style: solid;
+  border-color: transparent #ffb63d #ffb63d transparent;
+  border-width: 10vh 10vw 10vh 10vw;
+}
+
+#featureHeader {
+  margin-top: 3vh;
+  margin-bottom: 2vh;
+}
+
+.featureIconContainer {
+  position: relative;
+  z-index: 10;
+}
+
+.featureIcons {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.bottomBox {
+  margin-top: 54vh;
+  margin-bottom: 13vh;
+}
+.bottomBox h1 {
+  color: #428fde;
+}
+
+ul {
+  list-style-image: url(images/orangeCheck.PNG);
+}
+ul li {
+  font-size: 1.25rem;
+  margin-bottom: 2vh;
+}
+
+#listDemoBtn {
+  margin-left: 3vw;
+}
+
+#desktopPic {
+  height: 100%;
+  width: 100%;
 }
 
 /*# sourceMappingURL=index.css.map */

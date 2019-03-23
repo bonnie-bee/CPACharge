@@ -1,0 +1,187 @@
+@import "variables";
+@import "button";
+@import "header";
+@import "footer";
+
+
+body{
+    overflow-x: hidden;
+}
+
+.container{
+    font-family: $font;
+}
+
+
+.topBox{
+    height: auto;
+    margin-top: 7vh;
+}
+
+#aspcaLogo{
+    margin-top: 2vh;
+}
+
+#aspcaHeader{
+    color: $blue;
+}
+
+
+.line{
+    height: .3vh;
+    background-color: $blue;
+    margin-top: 5vh;
+}
+
+
+.benefitsHeader{
+    color: $blue;
+    margin-top: 2vh;
+    text-align: center;
+}
+
+.benefitsBox{
+    height: auto;
+    background-color: $white;
+    border: solid $lightGrey thin;
+    border-bottom: solid $macaroni 8px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    padding-top: 2%;
+        h5{
+            font-weight: bold;
+            color: $stormy;
+            font-size: 1.3rem;
+        }
+        p{
+            font-size: .9rem;
+        }
+}
+
+#contactBox{
+    border: none;
+    text-align: center;
+    font-weight: bold;
+        img{
+            border-radius: 50px;
+            background-color: $lightGrey;
+            margin-bottom: 2vh;
+        }
+        p{
+            margin-bottom: 5vh;
+        }
+}
+
+
+.testimonial{
+    @include anchorTags();
+    height: 33vh;
+    border: solid $lightGrey thin;
+    border-bottom: solid $blue 8px;
+    margin-top: 3vh;
+}
+
+.testimonial:hover{
+    @include anchorTags();
+    box-shadow: 0px 0px 5px $lightGrey, 0 0 10px $lightGrey;
+}
+
+#stars{
+    margin-top: 2vh;
+}
+
+.starIcon{
+    color: $macaroni;
+}
+
+#squiggle{
+    background-image: url(images/squiggle.PNG);
+    height: 25vh;
+    background-repeat: no-repeat;
+    margin-top: 3.5vh;
+}
+
+#quoteMarks{
+    background-image: url(images/quoteMarks.PNG);
+    background-repeat: no-repeat;
+    height: 5vh;
+    margin-top: 13vh;
+}
+
+#reviewAuthor{
+    color: $blue;
+    font-weight: bold;
+    margin-top: 11vh;
+    margin-left: -5vw;
+    p{
+        font-size: .6em;
+    }
+}
+
+
+.featureBox{
+    position: absolute;
+    height: 40vh;
+    width: 100vw;
+    background-color: $macaroni;
+    margin-top: 6vh;
+    right: 0%;
+    text-align: center;
+    color: $darkGrey;
+        p{
+            margin-top: 3vh;
+            font-weight: bold;
+        } 
+}
+
+.featureBox::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 20vh;
+    background-color: $macaroni;
+    border-style: solid;
+    border-color: transparent $lightOrange $lightOrange transparent;
+    border-width: 10vh 10vw 10vh 10vw; 
+}
+
+#featureHeader{
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+}
+
+.featureIconContainer{
+    position: relative;
+    z-index: 10;
+}
+
+.featureIcons{
+    max-width:50%;
+    max-height:50%;
+}
+
+.bottomBox{
+    margin-top: 54vh;
+    margin-bottom: 13vh;
+        h1{
+            color: $blue;
+        }
+}
+
+ul{
+    list-style-image: url(images/orangeCheck.PNG);
+    li{
+        font-size: 1.25rem;
+        margin-bottom:2vh;
+    }
+}
+
+#listDemoBtn{
+    margin-left: 3vw;
+}
+
+#desktopPic{
+    height: 100%;
+    width: 100%;
+}
+

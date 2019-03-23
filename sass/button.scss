@@ -1,0 +1,10 @@
+@import "variables";
+
+.demoBtn{
+    @include buttons(.8rem, 11px, 46px);
+}
+
+.demoBtn:hover{
+    @include buttonsHover(.8rem, 11px, 46px)
+
+}

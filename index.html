@@ -6,13 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CPACharge</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="icon" type="image/png" href="icon.PNG">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-
-
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
 <body>
@@ -21,10 +19,9 @@
     <div class="navbar sticky-top">
         <div class="container">
             <a class="nav-brand active" href="https://cpacharge.com/">
-                <img src="images/logo.PNG" alt="CPACharge Logo" class="img-responsive" id="logo" /> </a>
+                <img class="img-responsive" id="logo" src="images/logo.PNG" alt="CPACharge Logo" /> </a>
             <span class="navbar-text ml-auto">844-352-4705</span>
-            <a class="nav-brand" href="https://cpacharge.com/sign-up/?partner=alcpa" id="navBtn">CREATE
-                ACCOUNT</a>
+            <a class="nav-brand" id="navBtn" href="https://cpacharge.com/sign-up/?partner=alcpa" >CREATE ACCOUNT</a>
         </div>
     </div>
 
@@ -33,78 +30,66 @@
 
         <!-- top row with city photo and info box-->
         <div class="row justify-content-around">
-            <img src="images/capitol.PNG" alt="Alabama Capitol Building" class="col-md-6 topBox img-responsive" />
-            <div class="col-md-6 topBox">
-                <img src="images/aspca.PNG" alt="Alabama Society of CPAs logo" class="img-responsive" id="aspcaLogo" />
-                <h1 id="firstHeader">Alabama Society of CPAs</h1>
-                <p>CPACharge is proud to be selected by the Alabama Society of CPAs as your official member benefit
-                    provider for online payments. With CPACharge, you can easily accept credit, debit, and eCheck
-                    payments online or in your office. Together ASCPA and CPACharge are working to ensure your firm has
-                    the tools for success.</p>
-                <a href="https://cpacharge.com/member-programs/alabama-society-of-cpas/?partner=alcpa#demo-form"
-                    class="demoBtn">GET A DEMO</a>
+            <img class="col-lg-6 topBox img-responsive" src="images/capitol.PNG" alt="Alabama Capitol Building"  />
+            <div class="col-lg-6 topBox">
+                <img class="img-responsive" id="aspcaLogo" src="images/aspca.PNG" alt="Alabama Society of CPAs logo" />
+                <h1 id="aspcaHeader">Alabama Society of CPAs</h1>
+                <p>CPACharge is proud to be selected by the Alabama Society of CPAs as your official member benefit provider for online payments. With CPACharge, you can easily accept credit, debit, and eCheck payments online or in your office. Together ASCPA and CPACharge are working to ensure your firm has the tools for success.</p>
+                <a class="demoBtn" href="https://cpacharge.com/member-programs/alabama-society-of-cpas/?partner=alcpa#demo-form">GET A DEMO</a>
             </div>
         </div>
 
 
         <!-- line -->
         <div class="row justify-content-around">
-            <div class="col-sm-11 line"></div>
+            <div class="col-sm-12 line"></div>
         </div>
-        <!-- row with header for boxes -->
+
+
+        <!-- row with header for 6 benefits info boxes -->
         <div class="row">
-            <div class="col-sm-12 header">
+            <div class="col-sm-12 benefitsHeader">
                 <h1>Your member benefits</h1>
             </div>
         </div>
-        <!-- row with 3 equal boxes -->
+        <!-- row with 6 equal info boxes and a break in the middle -->
         <div class="row justify-content-around">
-            <div class="col-md-3 sixBox">
+            <div class="col-lg-3 col-md-5 benefitsBox">
                 <h5>Three months free</h5>
-                <p>Sign up for a CPACharge account through the Alabama SOciety of CPAs and we'll waive your monthly
-                    program fee for three months.</p>
+                <p>Sign up for a CPACharge account through the Alabama Society of CPAs and we'll waive your monthly program fee for three months.</p>
             </div>
-            <div class="col-md-3 sixBox">
+            <div class="col-lg-3 col-md-5 benefitsBox">
                 <h5>No long-term contracts or minimum processing</h5>
                 <p>Process as much or as little as you want every month with no long-term contract obligation.</p>
             </div>
-            <div class="col-md-3 sixBox">
+            <div class="col-lg-3 col-md-5 benefitsBox">
                 <h5>No start-up or cancellation costs</h5>
-                <p>Start accepting credit cards right away with no set-up fees, and cancel your account anytime without
-                    penalty.</p>
+                <p>Start accepting credit cards right away with no set-up fees, and cancel your account anytime without penalty.</p>
             </div>
             <div class="w-100"></div>
-            <div class="col-md-3 sixBox">
+            <div class="col-lg-3 col-md-5 benefitsBox">
                 <h5>No equipment or swipe needed</h5>
-                <p>Our online payments technology lets you accept payments in your office, on your website, or by email
-                    without special equipment.</p>
+                <p>Our online payments technology lets you accept payments in your office, on your website, or by email without special equipment.</p>
             </div>
-            <div class="col-md-3 sixBox">
+            <div class="col-lg-3 col-md-5 benefitsBox">
                 <h5>Scheduled Payments and PCI compliance included</h5>
-                <p>While other processors charge extra for recurring billing and PCI compliance, with CPACharge, these
-                    are included.</p>
+                <p>While other processors charge extra for recurring billing and PCI compliance, with CPACharge, these are included.</p>
             </div>
-            <div class="col-md-3 sixBox" id="sixthBox">
-                <img src="images/phoneIcon.PNG" alt="Telephone icon" class="img-responsive center-block" />
+            <div class="col-lg-3 col-md-5 benefitsBox" id="contactBox">
+                <img class="img-responsive center-block" src="images/phoneIcon.PNG" alt="Telephone icon" />
                 <p>Call 844-352-4705 for a cost comparison</p>
-                <a href="https://cpacharge.com/member-programs/alabama-society-of-cpas/?partner=alcpa#demo-form"
-                    class="demoBtn">GET A DEMO</a>
+                <a class="demoBtn" href="https://cpacharge.com/member-programs/alabama-society-of-cpas/?partner=alcpa#demo-form">GET A DEMO</a>
             </div>
         </div>
 
-        <!-- row with wide box -->
+
+        <!-- row with wide info box -->
         <div class="row justify-content-around">
-            <a class="col-sm-11 wideBox" href="https://cpacharge.com/reviews">
+            <a class="col-sm-11 testimonial" href="https://cpacharge.com/reviews">
                 <div class="row justify-content-around">
                     <div class="col-sm-7">
-                        <h1 id="stars"><span class="starIcon">★</span><span class="starIcon">★</span><span
-                                class="starIcon">★</span><span class="starIcon">★</span><span class="starIcon">★</span>
-                        </h1>
-                        <p class="review">CPACharge has made it very easy and inexpensive to accept payments via
-                            credit card. I'm
-                            getting paid faster, and by having the paymet link on my invoices and website, clients
-                            are
-                            able to pay their bills with no hassles.</p>
+                        <h1 id="stars"><span class="starIcon">★</span><span class="starIcon">★</span><span class="starIcon">★</span><span class="starIcon">★</span><span class="starIcon">★</span></h1>
+                        <p class="review">CPACharge has made it very easy and inexpensive to accept payments via credit card. I'm getting paid faster, and by having the payment link on my invoices and website, clients are able to pay their bills with no hassles.</p>
                     </div>
                     <div class="col-sm-1" id="squiggle"></div>
                     <div class="col-sm-1" id="quoteMarks"></div>
@@ -116,68 +101,58 @@
             </a>
         </div>
 
-        <!-- row for orange box -->
-        <div class="orangeBox">
-            <div class="container infoIcons">
-                <h1 id="orangeHeader">Features designed for CPA firms</h1>
+
+        <!-- row for orange box with icons-->
+        <div class="featureBox">
+            <div class="container featureIconContainer">
+                <h1 id="featureHeader">Features designed for CPA firms</h1>
                 <div class="row justify-content-around">
                     <div class="col-sm-3">
-                        <img src="images/computerIcon.PNG" alt="computer icon" class="productIcons" />
+                        <img class="featureIcons" src="images/computerIcon.PNG" alt="computer icon" />
                         <p>Easily incorporate online payments for convenience</p>
                     </div>
                     <div class="col-sm-3">
-                        <img src="images/linkIcon.PNG" alt="link icon" class="productIcons" />
+                        <img class="featureIcons" src="images/linkIcon.PNG" alt="link icon" />
                         <p>Create custom secure payment links for your firm</p>
                     </div>
                     <div class="col-sm-3">
-                        <img src="images/graphIcon.PNG" alt="bar graph icon" class="productIcons" />
+                        <img class="featureIcons" src="images/graphIcon.PNG" alt="bar graph icon" />
                         <p>Quickly reconcile with robust and detailed reporting</p>
 
                     </div>
                     <div class="col-sm-3">
-                        <img src="images/payIcon.PNG" alt="pay button icon" class="productIcons" />
+                        <img class="featureIcons" src="images/payIcon.PNG" alt="pay button icon" />
                         <p>Provide a modern client payment experience</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- row with two equal boxes -->
+
+        <!-- row with list and desktop image -->
         <div class="row justify-content-around">
-            <div class="col-md-4 bottomTwo">
+            <div class="col-md-4 bottomBox">
                 <h1>Trust our proven, vetted technology</h1>
                 <br>
                 <ul>
                     <li>Used by more than 50,000 professionals nationwide</li>
-                    <li>The only payment solution offered as an AISCPA Member Discount</li>
+                    <li>The only payment solution offered as an AICPA Member Discount</li>
                     <li>More than a decade of online payments experience</li>
                 </ul>
                 <br>
-                <a href="https://cpacharge.com/member-programs/alabama-society-of-cpas/?partner=alcpa#demo-form"
-                    class="demoBtn" id="bottomDemoBtn">GET A DEMO</a>
+                <a class="demoBtn" id="listDemoBtn" href="https://cpacharge.com/member-programs/alabama-society-of-cpas/?partner=alcpa#demo-form">GET A DEMO</a>
             </div>
-            <img src="images/desktop.PNG" alt="desktop computer with money icons around it" class="col-md-5 bottomTwo"
-                id="desktopPic">
+            <img class="col-md-5 bottomBox" id="desktopPic" src="images/desktop.PNG" alt="desktop computer with money icons around it" />
         </div>
-        <!-- footer -->
     </div>
+
+
+    <!-- footer -->
     <footer class="fixed">
-        <img src="images/footerLogo.PNG" alt="CPACharge Logo" id="footerLogo"/>
+        <img id="footerLogo" src="images/footerLogo.PNG" alt="CPACharge Logo" />
         <p id="learnMore">Learn more about CPACharge pricing and account features. Call us at 844-352-4705.</p>
-        <p id="legalFont">CPACharge is a registered agent of Wells Fargo Bank, N.A., Concord, CA and Citizens Bank, N.A., Providence, RI..   |   <a href="https://cpacharge.com/privacy" id="privacyPolicy">Privacy Policy</a></p>
+        <p id="legalFont">CPACharge is a registered agent of Wells Fargo Bank, N.A., Concord, CA and Citizens Bank, N.A., Providence, RI.. | <a href="https://cpacharge.com/privacy" id="privacyPolicy">Privacy Policy</a></p>
     </footer>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -1,0 +1,22 @@
+@import "variables";
+
+
+.navbar{
+    background-color: $white;
+    height: 10vh;
+    color: $blue;
+    font-family: $font;
+}
+
+.navbar-text{
+    margin-right: 1vw;
+}
+
+#navBtn{
+    @include buttons(.8rem, 11px, 18px);
+}
+
+#navBtn:hover{
+    @include buttonsHover(.8rem, 11px, 18px)
+}
+
