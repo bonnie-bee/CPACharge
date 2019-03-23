@@ -26,6 +26,15 @@ body{
     color: $blue;
 }
 
+#capitalPic{
+    @include breakpoints(1200px){
+        height: 80%;
+        margin-top: 8%;
+    }
+    @include breakpoints(768px){
+        height: 50%;
+    }
+}
 
 .line{
     height: .3vh;
@@ -58,6 +67,12 @@ body{
         }
 }
 
+.largeBreak{
+    @include breakpoints(992px){
+        display: none;
+    }
+}
+
 #contactBox{
     border: none;
     text-align: center;
@@ -75,10 +90,9 @@ body{
 
 .testimonial{
     @include anchorTags();
-    height: 33vh;
     border: solid $lightGrey thin;
     border-bottom: solid $blue 8px;
-    margin-top: 3vh;
+    margin-top: 3vh;   
 }
 
 .testimonial:hover{
@@ -96,22 +110,25 @@ body{
 
 #squiggle{
     background-image: url(images/squiggle.PNG);
-    height: 25vh;
+    background-size: contain;
+    height: auto;
     background-repeat: no-repeat;
-    margin-top: 3.5vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 #quoteMarks{
     background-image: url(images/quoteMarks.PNG);
     background-repeat: no-repeat;
-    height: 5vh;
-    margin-top: 13vh;
+    height: auto;
+    margin-top: 14vh;
+    // margin-bottom: 14vh;
 }
 
 #reviewAuthor{
     color: $blue;
     font-weight: bold;
-    margin-top: 11vh;
+    margin-top: 9vh;
     margin-left: -5vw;
     p{
         font-size: .6em;
@@ -121,7 +138,6 @@ body{
 
 .featureBox{
     position: absolute;
-    height: 40vh;
     width: 100vw;
     background-color: $macaroni;
     margin-top: 6vh;
@@ -137,8 +153,8 @@ body{
 .featureBox::after{
     content: "";
     position: absolute;
-    right: 0;
-    top: 20vh;
+    right: 0%;
+    bottom: 0%;
     background-color: $macaroni;
     border-style: solid;
     border-color: transparent $lightOrange $lightOrange transparent;
@@ -161,11 +177,20 @@ body{
 }
 
 .bottomBox{
-    margin-top: 54vh;
+    margin-top: 50vh;
     margin-bottom: 13vh;
         h1{
             color: $blue;
         }
+    @include breakpoints(1200px){
+        margin-top: 65vh;
+    }
+    @include breakpoints(900px){
+        margin-top: 55vh;
+    }
+    @include breakpoints(600px){
+        margin-top: 100vh;
+    }
 }
 
 ul{
@@ -183,5 +208,12 @@ ul{
 #desktopPic{
     height: 100%;
     width: 100%;
+    @include breakpoints(986px){
+        margin-top: -55vh;
+        height: 80%;
+        width: 80%;
+        margin-top: 0vh;
+    }
 }
+
 
