@@ -1,0 +1,88 @@
+
+.topBox{
+    height: auto;
+    margin-top: 7vh;
+    h1{
+        color: $blue;
+        margin-top: 3vh;
+    }
+    p{
+        margin-top: 2vh;
+        line-height: 4vh;
+        margin-bottom: 4vh;
+    }
+}
+
+#capitalPic{
+    height: 85%;
+    @include breakpoints(1200px){
+        height: 80%;
+        margin-top: 8%;
+    }
+    @include breakpoints(768px){
+        height: 50%;
+    }
+}
+
+#ascpaLogo{
+    margin-top: 2vh;
+}
+
+
+.line{
+    height: .4vh;
+    background-color: $blue;
+    margin-top: 5vh;
+}
+
+
+.benefitsHeader{
+    color: $blue;
+    margin-top: 4vh;
+    text-align: center;
+}
+
+.benefitsBox{
+    width: 23.5vw;
+    background-color: $white;
+    border: solid $lightGrey thin;
+    border-bottom: solid $macaroni 8px;
+    margin: auto;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    line-height: 3.5vh;
+
+    padding: 2% 3%;
+        h5{
+            font-weight: bold;
+            color: $stormy;
+            font-size: 1.5rem;
+        }
+        p{
+            font-size: .9rem;
+        }
+}
+
+.col-lg-3{
+    width: 33%;
+}
+
+.largeBreak{
+    @include breakpoints(992px){
+        display: none;
+    }
+}
+
+#contactBox{
+    border: none;
+    text-align: center;
+    font-weight: bold;
+        img{
+            border-radius: 50px;
+            background-color: $lightGrey;
+            margin-bottom: 2vh;
+        }
+        p{
+            margin-bottom: 5vh;
+        }
+}

@@ -4,7 +4,7 @@
   text-align: center;
   background-color: #428fde;
   color: white;
-  padding: 11px 46px;
+  padding: 15px 46px;
 }
 
 .demoBtn:hover {
@@ -13,7 +13,7 @@
   text-align: center;
   background-color: #428fde;
   color: white;
-  padding: 11px 46px;
+  padding: 15px 46px;
   background-color: #4266de;
   color: white;
   text-decoration: none;
@@ -24,12 +24,19 @@
   height: 10vh;
   color: #428fde;
   font-family: "Muli", sans-serif;
+  box-shadow: 7px 0px 10px #cccccc, 7px 0px 15px #cccccc;
+}
+@media screen and (max-width: 570px) {
+  .navbar {
+    height: 20vh;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .navbar-text {
   margin-right: 1vw;
 }
-
 #navBtn {
   font-weight: bold;
   font-size: 0.8rem;
@@ -37,6 +44,11 @@
   background-color: #428fde;
   color: white;
   padding: 11px 18px;
+}
+@media screen and (max-width: 570px) {
+  #navBtn {
+    display: none;
+  }
 }
 
 #navBtn:hover {
@@ -85,27 +97,23 @@ footer p {
   text-decoration: underline;
 }
 
-body {
-  overflow-x: hidden;
-}
-
-.container {
-  font-family: "Muli", sans-serif;
-}
-
 .topBox {
   height: auto;
   margin-top: 7vh;
 }
-
-#aspcaLogo {
-  margin-top: 2vh;
-}
-
-#aspcaHeader {
+.topBox h1 {
   color: #428fde;
+  margin-top: 3vh;
+}
+.topBox p {
+  margin-top: 2vh;
+  line-height: 4vh;
+  margin-bottom: 4vh;
 }
 
+#capitalPic {
+  height: 85%;
+}
 @media screen and (max-width: 1200px) {
   #capitalPic {
     height: 80%;
@@ -118,34 +126,44 @@ body {
   }
 }
 
+#ascpaLogo {
+  margin-top: 2vh;
+}
+
 .line {
-  height: 0.3vh;
+  height: 0.4vh;
   background-color: #428fde;
   margin-top: 5vh;
 }
 
 .benefitsHeader {
   color: #428fde;
-  margin-top: 2vh;
+  margin-top: 4vh;
   text-align: center;
 }
 
 .benefitsBox {
-  height: auto;
+  width: 23.5vw;
   background-color: white;
   border: solid #cccccc thin;
   border-bottom: solid #ffab11 8px;
-  margin-top: 2vh;
+  margin: auto;
+  margin-top: 3vh;
   margin-bottom: 2vh;
-  padding-top: 2%;
+  line-height: 3.5vh;
+  padding: 2% 3%;
 }
 .benefitsBox h5 {
   font-weight: bold;
-  color: #51497c;
-  font-size: 1.3rem;
+  color: #504679;
+  font-size: 1.5rem;
 }
 .benefitsBox p {
   font-size: 0.9rem;
+}
+
+.col-lg-3 {
+  width: 33%;
 }
 
 @media screen and (max-width: 992px) {
@@ -173,7 +191,10 @@ body {
   text-decoration: inherit;
   border: solid #cccccc thin;
   border-bottom: solid #428fde 8px;
-  margin-top: 3vh;
+  margin-top: 6vh;
+  margin-bottom: 2vh;
+  padding-bottom: 5vh;
+  font-size: 1.3em;
 }
 
 .testimonial:hover {
@@ -182,12 +203,9 @@ body {
   box-shadow: 0px 0px 5px #cccccc, 0 0 10px #cccccc;
 }
 
-#stars {
-  margin-top: 2vh;
-}
-
 .starIcon {
   color: #ffab11;
+  font-size: 0.7em;
 }
 
 #squiggle {
@@ -195,8 +213,7 @@ body {
   background-size: contain;
   height: auto;
   background-repeat: no-repeat;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
+  margin-top: 6vh;
 }
 
 #quoteMarks {
@@ -209,7 +226,7 @@ body {
 #reviewAuthor {
   color: #428fde;
   font-weight: bold;
-  margin-top: 9vh;
+  margin-top: 11vh;
   margin-left: -5vw;
 }
 #reviewAuthor p {
@@ -242,13 +259,14 @@ body {
 }
 
 #featureHeader {
-  margin-top: 3vh;
-  margin-bottom: 2vh;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
 }
 
 .featureIconContainer {
   position: relative;
   z-index: 10;
+  margin-bottom: 3vh;
 }
 
 .featureIcons {
@@ -257,8 +275,8 @@ body {
 }
 
 .bottomBox {
-  margin-top: 50vh;
-  margin-bottom: 13vh;
+  margin-top: 60vh;
+  margin-bottom: 15vh;
 }
 .bottomBox h1 {
   color: #428fde;
@@ -288,8 +306,9 @@ ul {
   list-style-image: url(images/orangeCheck.PNG);
 }
 ul li {
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   margin-bottom: 2vh;
+  padding-left: 1vw;
 }
 
 #listDemoBtn {
@@ -307,6 +326,18 @@ ul li {
     width: 80%;
     margin-top: 0vh;
   }
+}
+
+html {
+  width: 100vw;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  font-family: "Muli", sans-serif;
 }
 
 /*# sourceMappingURL=index.css.map */

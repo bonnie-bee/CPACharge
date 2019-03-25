@@ -6,17 +6,30 @@
     height: 10vh;
     color: $blue;
     font-family: $font;
+    box-shadow: 7px 0px 10px $lightGrey, 7px 0px 15px $lightGrey;
+
+    @include breakpoints(570px){
+        height: 20vh;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .navbar-text{
     margin-right: 1vw;
+    @include breakpoints(570px){
+    }
 }
 
 #navBtn{
     @include buttons(.8rem, 11px, 18px);
+    @include breakpoints(570px){
+        display: none;
+    }
 }
 
 #navBtn:hover{
-    @include buttonsHover(.8rem, 11px, 18px)
+    @include buttonsHover(.8rem, 11px, 18px);
+    
 }
 

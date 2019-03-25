@@ -1,0 +1,136 @@
+@import "variables";
+
+.testimonial{
+    @include anchorTags();
+    border: solid $lightGrey thin;
+    border-bottom: solid $blue 8px;
+    margin-top: 6vh; 
+    margin-bottom: 2vh;  
+    padding-bottom: 5vh;
+    // font-weight: bold;
+    font-size: 1.3em;
+}
+
+.testimonial:hover{
+    @include anchorTags();
+    box-shadow: 0px 0px 5px $lightGrey, 0 0 10px $lightGrey;
+}
+
+.starIcon{
+    color: $macaroni;
+    font-size: .7em;
+}
+
+#squiggle{
+    background-image: url(images/squiggle.PNG);
+    background-size: contain;
+    height: auto;
+    background-repeat: no-repeat;
+    margin-top: 6vh;
+    // margin-bottom: 8vh;
+}
+
+#quoteMarks{
+    background-image: url(images/quoteMarks.PNG);
+    background-repeat: no-repeat;
+    height: auto;
+    margin-top: 14vh;
+    // margin-bottom: 14vh;
+}
+
+#reviewAuthor{
+    color: $blue;
+    font-weight: bold;
+    margin-top: 11vh;
+    margin-left: -5vw;
+    p{
+        font-size: .6em;
+    }
+}
+
+
+.featureBox{
+    position: absolute;
+    width: 100vw;
+    background-color: $macaroni;
+    margin-top: 6vh;
+    right: 0%;
+    text-align: center;
+    color: $darkGrey;
+        p{
+            margin-top: 3vh;
+            font-weight: bold;
+        } 
+}
+
+.featureBox::after{
+    content: "";
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    background-color: $macaroni;
+    border-style: solid;
+    border-color: transparent $lightOrange $lightOrange transparent;
+    border-width: 10vh 10vw 10vh 10vw; 
+}
+
+#featureHeader{
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+.featureIconContainer{
+    position: relative;
+    z-index: 10;
+    margin-bottom: 3vh;
+}
+
+.featureIcons{
+    max-width:50%;
+    max-height:50%;
+}
+
+.bottomBox{
+    margin-top: 60vh;
+    margin-bottom: 15vh;
+        h1{
+            color: $blue;
+        }
+    @include breakpoints(1200px){
+        margin-top: 65vh;
+    }
+    @include breakpoints(900px){
+        margin-top: 55vh;
+    }
+    @include breakpoints(768px){
+            margin-top: 65vh;
+    }
+
+    @include breakpoints(576px){
+        margin-top: 100vh;
+    }
+}
+
+ul{
+    list-style-image: url(images/orangeCheck.PNG);
+    li{
+        font-size: 1.4rem;
+        margin-bottom:2vh;
+        padding-left: 1vw;
+    }
+}
+
+#listDemoBtn{
+    margin-left: 3vw;
+}
+
+#desktopPic{
+    height: 100%;
+    width: 100%;
+    @include breakpoints(986px){
+        margin-top: -55vh;
+        height: 80%;
+        width: 80%;
+        margin-top: 0vh;
+    }
+}
