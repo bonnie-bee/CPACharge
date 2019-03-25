@@ -28,7 +28,7 @@
 }
 @media screen and (max-width: 570px) {
   .navbar {
-    height: 20vh;
+    height: 15vh;
     width: 100%;
     text-align: center;
   }
@@ -37,6 +37,12 @@
 .navbar-text {
   margin-right: 1vw;
 }
+@media screen and (max-width: 570px) {
+  .navbar-text {
+    display: none;
+  }
+}
+
 #navBtn {
   font-weight: bold;
   font-size: 0.8rem;
