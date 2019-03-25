@@ -15,18 +15,24 @@
 
 <body>
 
-    <!-- navbar - sticky -->
-    <div class="navbar fixed-top">
+    <!-- navbar - fixed -->
+    <div class="navbar fixed-top navbar-expand-md navbar-light">
         <div class="container navContainer">
-            <a href="https://cpacharge.com/">
+            <a class="navbar-brand" href="https://cpacharge.com/">
                 <img class="img-responsive" id="logo" src="images/logo.PNG" alt="CPACharge Logo" /> </a>
-            <span class="navbar-text ml-auto">844-352-4705</span>
-            <a class="nav-brand" id="navBtn" href="https://cpacharge.com/sign-up/?partner=alcpa">CREATE ACCOUNT</a>
+            <div class="wideScreen"></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="collapseNav">
+                <span class="nav-item navbar-text ml-auto">844-352-4705</span>
+                <a class="nav-item" id="navBtn" href="https://cpacharge.com/sign-up/?partner=alcpa">CREATE ACCOUNT</a>
+            </div>
         </div>
     </div>
 
 
-    <div class="container">
+    <div class="container" id="pageContainer">
 
         <!-- top row with city photo and info box-->
         <div class="row justify-content-around">

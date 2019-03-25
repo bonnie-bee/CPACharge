@@ -43,7 +43,7 @@
 }
 
 .benefitsBox{
-    width: 23.5vw;
+    width: 345px;
     background-color: $white;
     border: solid $lightGrey thin;
     border-bottom: solid $macaroni 8px;
@@ -51,7 +51,6 @@
     margin-top: 3vh;
     margin-bottom: 2vh;
     line-height: 3.5vh;
-
     padding: 2% 3%;
         h5{
             font-weight: bold;
@@ -61,10 +60,48 @@
         p{
             font-size: .9rem;
         }
-}
 
-.col-lg-3{
-    width: 33%;
+        @include breakpoints(1200px){
+            width: 300px;
+            h5{
+                font-size: 1.35rem;
+            }
+
+        }
+        @include breakpoints(993px){
+            width: 230px;
+            h5{
+                font-size: 1.2rem;
+            }
+        }
+        @include breakpoints(768px){
+            width: 260px;
+            h5{
+                font-size: 1.2rem;
+            }
+        }
+        @include breakpoints(575px){
+            width: 450px;
+            margin-top: 1vh;
+            margin-bottom: 1vh;
+            
+            h5{
+                font-size: 1.5rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+        @include breakpoints(460px){
+            margin-left: 5vw;
+            margin-right: 5vw;
+            h5{
+                font-size: 1.3rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
 }
 
 .largeBreak{

@@ -18,14 +18,14 @@
 .navbar-text{
     margin-right: 1vw;
     @include breakpoints(570px){
-        display: none;
+        // display: none;
     }
 }
 
 #navBtn{
     @include buttons(.8rem, 11px, 18px);
     @include breakpoints(570px){
-        display: none;
+        // display: none;
     }
 }
 

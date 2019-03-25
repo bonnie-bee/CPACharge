@@ -41,7 +41,6 @@ function navBarSize() {
             navBar.css("height", "10vh");
             logo.css("height","70%");
             logo.css("width","70%");
-            navCon.addClass("justify-content-center");
             // phone.css("display", "inline");
             // navBtn.css("display", "inline");
         } else {

@@ -37,12 +37,6 @@
 .navbar-text {
   margin-right: 1vw;
 }
-@media screen and (max-width: 570px) {
-  .navbar-text {
-    display: none;
-  }
-}
-
 #navBtn {
   font-weight: bold;
   font-size: 0.8rem;
@@ -51,12 +45,6 @@
   color: white;
   padding: 11px 18px;
 }
-@media screen and (max-width: 570px) {
-  #navBtn {
-    display: none;
-  }
-}
-
 #navBtn:hover {
   font-weight: bold;
   font-size: 0.8rem;
@@ -149,7 +137,7 @@ footer p {
 }
 
 .benefitsBox {
-  width: 23.5vw;
+  width: 345px;
   background-color: white;
   border: solid #cccccc thin;
   border-bottom: solid #ffab11 8px;
@@ -167,9 +155,54 @@ footer p {
 .benefitsBox p {
   font-size: 0.9rem;
 }
-
-.col-lg-3 {
-  width: 33%;
+@media screen and (max-width: 1200px) {
+  .benefitsBox {
+    width: 300px;
+  }
+  .benefitsBox h5 {
+    font-size: 1.35rem;
+  }
+}
+@media screen and (max-width: 993px) {
+  .benefitsBox {
+    width: 230px;
+  }
+  .benefitsBox h5 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .benefitsBox {
+    width: 260px;
+  }
+  .benefitsBox h5 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .benefitsBox {
+    width: 450px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+  .benefitsBox h5 {
+    font-size: 1.5rem;
+  }
+  .benefitsBox p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 460px) {
+  .benefitsBox {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  .benefitsBox h5 {
+    font-size: 1.3rem;
+  }
+  .benefitsBox p {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -228,6 +261,16 @@ footer p {
   height: auto;
   margin-top: 14vh;
 }
+@media screen and (max-width: 1200px) {
+  #quoteMarks {
+    margin-top: 18vh;
+  }
+}
+@media screen and (max-width: 990px) {
+  #quoteMarks {
+    margin-top: 21vh;
+  }
+}
 
 #reviewAuthor {
   color: #428fde;
@@ -237,6 +280,11 @@ footer p {
 }
 #reviewAuthor p {
   font-size: 0.6em;
+}
+@media screen and (max-width: 1200px) {
+  #reviewAuthor {
+    margin-top: 14vh;
+  }
 }
 
 .featureBox {
@@ -304,6 +352,11 @@ footer p {
 }
 @media screen and (max-width: 576px) {
   .bottomBox {
+    margin-top: 110vh;
+  }
+}
+@media screen and (max-width: 324px) {
+  .bottomBox {
     margin-top: 100vh;
   }
 }
@@ -344,6 +397,10 @@ body {
 
 .container {
   font-family: "Muli", sans-serif;
+}
+
+#pageContainer {
+  margin-top: 15vh;
 }
 
 /*# sourceMappingURL=index.css.map */

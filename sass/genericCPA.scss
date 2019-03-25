@@ -36,6 +36,13 @@
     height: auto;
     margin-top: 14vh;
     // margin-bottom: 14vh;
+    @include breakpoints(1200px){
+        margin-top: 18vh;
+    }
+
+    @include breakpoints(990px){
+        margin-top: 21vh;
+    }
 }
 
 #reviewAuthor{
@@ -45,6 +52,9 @@
     margin-left: -5vw;
     p{
         font-size: .6em;
+    }
+    @include breakpoints(1200px){
+        margin-top: 14vh;
     }
 }
 
@@ -107,6 +117,10 @@
     }
 
     @include breakpoints(576px){
+        margin-top: 110vh;
+    }
+
+    @include breakpoints(324px){
         margin-top: 100vh;
     }
 }
