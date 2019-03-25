@@ -7,8 +7,9 @@
     margin-top: 6vh; 
     margin-bottom: 2vh;  
     padding-bottom: 5vh;
-    // font-weight: bold;
     font-size: 1.3em;
+
+    
 }
 
 .testimonial:hover{
@@ -21,40 +22,49 @@
     font-size: .7em;
 }
 
+.center{
+    align-items: center;
+}
+
 #squiggle{
     background-image: url(images/squiggle.PNG);
     background-size: contain;
-    height: auto;
+    height: 29vh;
     background-repeat: no-repeat;
-    margin-top: 6vh;
-    // margin-bottom: 8vh;
+    margin-top: 5vh;
+    @include breakpoints (525px){
+        transform: rotate(90deg);
+        height: 200px; 
+        width: 50px;  
+        margin-top: -10vh;   
+        // display: none;
+    }
 }
 
 #quoteMarks{
     background-image: url(images/quoteMarks.PNG);
     background-repeat: no-repeat;
-    height: auto;
-    margin-top: 14vh;
-    // margin-bottom: 14vh;
-    @include breakpoints(1200px){
-        margin-top: 18vh;
-    }
-
-    @include breakpoints(990px){
-        margin-top: 21vh;
+    height: 10vh;
+    margin-top: 6vh;
+    @include breakpoints (525px){
+        display: none;
     }
 }
 
 #reviewAuthor{
     color: $blue;
     font-weight: bold;
-    margin-top: 11vh;
     margin-left: -5vw;
+    margin-top: 5vh;
+
     p{
         font-size: .6em;
     }
-    @include breakpoints(1200px){
-        margin-top: 14vh;
+
+    @include breakpoints (525px){
+        text-align: center;
+        margin-top: -10vh;   
+
     }
 }
 
@@ -121,7 +131,7 @@
     }
 
     @include breakpoints(324px){
-        margin-top: 100vh;
+        margin-top: 110vh;
     }
 }
 

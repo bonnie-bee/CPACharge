@@ -74,7 +74,7 @@
                 font-size: 1.2rem;
             }
         }
-        @include breakpoints(768px){
+        @include breakpoints(767px){
             width: 260px;
             h5{
                 font-size: 1.2rem;
