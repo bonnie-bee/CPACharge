@@ -1,16 +1,14 @@
 # CPACharge
 
-# MVP:
+## A working mock up of a CPACharge member site
 
-* responsive - 3 break points
-* accurate recreation
-* working links
+It is responsive, has many breakpoints, and is created using HTML/SCSS/Bootstrap/JS
 
-# Bonus:
+## Potential To Do:
 
-* Animated computer image
-* Animated buttons on hover
-* slow fade?
-* more quotes - carousel?
-* orange blocks move in from side?
-* demo form
+* **Responsive Navbar**
+  * resizes as user scrolls on mobile
+  * adjust toggle menu
+* Animated computer image - fade in pieces
+* Slow fade
+* More quotes - carousel
