@@ -7,7 +7,7 @@
     font-family: $font;
     box-shadow: 7px 0px 10px $lightGrey, 7px 0px 15px $lightGrey;
 
-    @include breakpoints(570px){
+    @include breakpoints(767px){
         // height: 20%;
         text-align: center;
     }
@@ -27,13 +27,29 @@
     }
 }
 
+#collapseNav{
+    margin-top: 2%;
+}
+
 .navbar-light .navbar-text{
     color: $blue;
     margin-right: 1vw;
+    @include breakpoints(767px){
+        border: $macaroni solid thin;
+        font-weight: bold;
+        color: $darkGrey;
+        padding: 11px 18px;
+        font-size: .8em;
+    }
 }
 
 #navBtn{
     @include buttons(.8rem, 11px, 18px);
+    @include breakpoints(767px){
+        border: $macaroni solid thin;
+        background-color: $white;
+        color: $darkGrey;
+    }
 }
 
 #navBtn:hover{

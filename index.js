@@ -13,9 +13,19 @@ windowSize();
 
 function windowSize() {
     const view = $(window);
+    const navBar = $(".navbar");
+    const collapse = $("#collapseNav");
+    const phoneNum = $(".navbar-text");
+    const navBtn = $("#navBtn");
+    const navItem = $(".nav-item");
+    const breakLine = $("<br>");
 
     if (view.width() < 570) {
         console.log("Help me, I'm little");
+        // navBtn.prepend(breakLine);
+        // navItem.css("margin-bottom", "4%");
+        // collapse.attr("class", "justify-content-around");
+        navBar.css("padding-bottom", "3%");
         navBarSize();
     } else {
         console.log("I'm fine");

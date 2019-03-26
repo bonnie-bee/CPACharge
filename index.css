@@ -24,7 +24,7 @@
   font-family: "Muli", sans-serif;
   box-shadow: 7px 0px 10px #cccccc, 7px 0px 15px #cccccc;
 }
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 767px) {
   .navbar {
     text-align: center;
   }
@@ -44,9 +44,22 @@
   }
 }
 
+#collapseNav {
+  margin-top: 2%;
+}
+
 .navbar-light .navbar-text {
   color: #428fde;
   margin-right: 1vw;
+}
+@media screen and (max-width: 767px) {
+  .navbar-light .navbar-text {
+    border: #ffab11 solid thin;
+    font-weight: bold;
+    color: #555555;
+    padding: 11px 18px;
+    font-size: 0.8em;
+  }
 }
 
 #navBtn {
@@ -56,6 +69,13 @@
   background-color: #428fde;
   color: white;
   padding: 11px 18px;
+}
+@media screen and (max-width: 767px) {
+  #navBtn {
+    border: #ffab11 solid thin;
+    background-color: white;
+    color: #555555;
+  }
 }
 
 #navBtn:hover {
