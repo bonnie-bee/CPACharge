@@ -8,10 +8,6 @@
     margin-bottom: 2vh;  
     padding-bottom: 5vh;
     font-size: 1.3em;
-
-    
-
-    
 }
 
 .testimonial:hover{
@@ -39,7 +35,6 @@
         height: 200px; 
         width: 50px;  
         margin-top: -10vh;   
-        // display: none;
     }
 }
 
@@ -58,18 +53,15 @@
     font-weight: bold;
     margin-left: -5vw;
     margin-top: 5vh;
-
-    p{
-        font-size: .6em;
-        @include breakpoints(767px){
-        font-size: .5em;
+        p{
+            font-size: .6em;
+            @include breakpoints(767px){
+            font-size: .5em;
+            }
         }
-    }
-
     @include breakpoints (575px){
         text-align: center;
         margin-top: -10vh;   
-
     }
 }
 
@@ -140,7 +132,7 @@
     }
 }
 
-ul{
+.checkList{
     list-style-image: url(images/orangeCheck.PNG);
     li{
         font-size: 1.4rem;
