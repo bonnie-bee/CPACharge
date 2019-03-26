@@ -54,7 +54,7 @@
 }
 @media screen and (max-width: 767px) {
   .navbar-light .navbar-text {
-    border: #ffab11 solid thin;
+    border: #f9a11b solid thin;
     font-weight: bold;
     color: #555555;
     padding: 11px 18px;

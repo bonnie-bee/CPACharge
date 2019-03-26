@@ -35,7 +35,7 @@
     color: $blue;
     margin-right: 1vw;
     @include breakpoints(767px){
-        border: $macaroni solid thin;
+        border: $headerOrange solid thin;
         font-weight: bold;
         color: $darkGrey;
         padding: 11px 18px;
