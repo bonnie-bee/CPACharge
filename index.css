@@ -21,15 +21,12 @@
 
 .navbar {
   background-color: white;
-  height: 10vh;
   color: #428fde;
   font-family: "Muli", sans-serif;
   box-shadow: 7px 0px 10px #cccccc, 7px 0px 15px #cccccc;
 }
 @media screen and (max-width: 570px) {
   .navbar {
-    height: 15vh;
-    width: 100%;
     text-align: center;
   }
 }
@@ -45,6 +42,20 @@
   color: white;
   padding: 11px 18px;
 }
+@media screen and (max-width: 425px) {
+  .navbar-brand {
+    width: 80%;
+    margin-left: -5%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #logo {
+    width: 80%;
+    margin-left: -10%;
+  }
+}
+
 #navBtn:hover {
   font-weight: bold;
   font-size: 0.8rem;
@@ -258,7 +269,7 @@ footer p {
   background-repeat: no-repeat;
   margin-top: 5vh;
 }
-@media screen and (max-width: 525px) {
+@media screen and (max-width: 575px) {
   #squiggle {
     transform: rotate(90deg);
     height: 200px;
@@ -273,7 +284,7 @@ footer p {
   height: 10vh;
   margin-top: 6vh;
 }
-@media screen and (max-width: 525px) {
+@media screen and (max-width: 575px) {
   #quoteMarks {
     display: none;
   }
@@ -288,7 +299,12 @@ footer p {
 #reviewAuthor p {
   font-size: 0.6em;
 }
-@media screen and (max-width: 525px) {
+@media screen and (max-width: 767px) {
+  #reviewAuthor p {
+    font-size: 0.5em;
+  }
+}
+@media screen and (max-width: 575px) {
   #reviewAuthor {
     text-align: center;
     margin-top: -10vh;
@@ -386,7 +402,7 @@ ul li {
   height: 100%;
   width: 100%;
 }
-@media screen and (max-width: 986px) {
+@media screen and (max-width: 991.5px) {
   #desktopPic {
     margin-top: -55vh;
     height: 80%;

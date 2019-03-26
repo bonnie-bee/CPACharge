@@ -32,22 +32,23 @@ function navBarSize() {
     const logo = $("#logo");
     const phone = $(".navbar-text");
     const navBtn = $("#navBtn");
+    const toggle = $(".navbar-toggler-icon");
     let top = 0;
     //detect scroll action
     view.scroll(function (event) {
         let here = $(this).scrollTop();
         if (here > top) {
             console.log("scrolled up")
-            navBar.css("height", "10vh");
-            logo.css("height","70%");
-            logo.css("width","70%");
+            // navBar.css("height", "12%");
+            // logo.css("height","70%");
+            // logo.css("width","70%");
             // phone.css("display", "inline");
             // navBtn.css("display", "inline");
         } else {
             console.log("scrolled down");
-            navBar.css("height", "15vh");
-            logo.css("height","100%");
-            logo.css("width","100%");
+            // navBar.css("height", "17%");
+            // logo.css("height","90%");
+            // logo.css("width","90%");
             // phone.css("display", "none");
             // navBtn.css("display", "none");
 
